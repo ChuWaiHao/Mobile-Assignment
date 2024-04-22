@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Timetable</string>
+
+    <string-array name="spinner_items">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string name="select_trimester">Select Trimester</string>
+
+    <string-array name="year_array">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+            <!-- Add more years as needed -->
+    </string-array>
+
+    <string-array name="month_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+
+
+
+    <string name="menu_icon_description">Menu</string>
+    <string-array name="expense_categories">
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Transport</item>
+        <item>Entertain</item>
+        <item>Social</item>
+        <item>Rent</item>
+    </string-array>
+    <string-array name="income_sources">
+        <item>Salary</item>
+        <item>Part Time</item>
+        <item>Financial</item>
+    </string-array>
+
+
+
+
+
+
+
+    <string name="back">Back</string>
+    <string name="current_month">Current Month</string>
+    <string name="add_event">Add Event</string>
+    <string name="honkai">Honkai</string>
+
+    <string-array name="color_options">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+    </string-array>
+</resources>

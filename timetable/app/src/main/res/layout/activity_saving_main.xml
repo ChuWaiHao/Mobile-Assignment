@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavingMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="Calendar">
+    </androidx.appcompat.widget.Toolbar>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/expenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Total Expense: RM 0.00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/savingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expenseTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Total Saving: RM 0.00"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="toggleDarkMode"
+        android:text="Toggle Dark Mode" />
+
+</RelativeLayout>

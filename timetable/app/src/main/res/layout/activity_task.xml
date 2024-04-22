@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/plusButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Add Task"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <TextView
+            android:id="@+id/inProgressTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="On Going"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/completedTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/task_item"/>
+
+
+</LinearLayout>
